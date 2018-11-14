@@ -11,8 +11,6 @@ class SubsController < ApplicationController
   end
 
   def show
-
-    
   end
 
   def new
@@ -53,7 +51,7 @@ private
   end
   
   def set_sub
-    @sub = Sub.find(params{:id})
+    @sub = Sub.find(params[:id])
   end
   
   def sub_params

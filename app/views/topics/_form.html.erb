@@ -1,0 +1,8 @@
+<h1><%= @topic.id ? "Edit Topic" : "New Topic" %></h1>
+<hr />
+<%= form_for [@sub, @topic] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true, autofocus: true, placeholder: "Name" %>
+  <br />
+  <%= f.label :body %>
+  <%= f.text_area :body, required: true, placeholder: %>
