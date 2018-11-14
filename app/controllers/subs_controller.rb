@@ -7,7 +7,7 @@ class SubsController < ApplicationController
   
   
   def index
-    @subs = Subs.all
+    @subs = Sub.all
   end
 
   def show
@@ -59,3 +59,4 @@ private
   def sub_params
     params.require(:sub).permit(:name)
   end
+end
