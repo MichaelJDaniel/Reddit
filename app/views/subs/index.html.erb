@@ -1,0 +1,7 @@
+<h1> Click a Sub to View Content </h1>
+<%= link_to "Create a Sub", new_sub_path %>
+<ul>
+  <% @subs.each do |s| %>
+  <li><%= link_to s.name, sub_path(s) %></li>
+  <% end %>
+</ul>
